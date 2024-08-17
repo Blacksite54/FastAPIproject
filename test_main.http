@@ -1,0 +1,19 @@
+# Test your FastAPI endpoints
+
+### Test POST /write_data
+POST http://127.0.0.1:8000/write_data
+Content-Type: application/json
+Accept: application/json
+
+{
+    "phone": "+79090000000",
+    "address": "текстовый адрес"
+}
+
+###
+
+### Test GET /check_data
+GET http://127.0.0.1:8000/check_data?phone=+79090000000
+Accept: application/json
+
+###
